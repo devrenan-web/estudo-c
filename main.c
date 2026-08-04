@@ -5,7 +5,7 @@
 
 int main() {
     // data types
-/*
+
     int age = 19;       // numeros inteiros (4 bytes em sistemas moder)
     int year = 2026;
     int quantity = 1;
@@ -130,7 +130,7 @@ int main() {
     printf("in an exhibit, i saw a %s.\n", noun);
     printf("%s was %s and %s!\n", noun, adject2, verb);
     printf("i was %s!\n", adject3);
-*/
+
     char name[50] = "";
     
     printf("enter your name: ");

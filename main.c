@@ -5,7 +5,7 @@
 
 int main() {
     // data types
-/*
+
     int age = 19;       // numeros inteiros (4 bytes em sistemas moder)
     int year = 2026;
     int quantity = 1;
@@ -172,7 +172,6 @@ int main() {
     }else{
         printf("invalid choice\n");
     }
-*/
 
     char choice = '\0';
     float feh = 0.0f;

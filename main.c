@@ -5,7 +5,7 @@
 
 int main() {
     // data types
-
+/*
     int age = 19;       // numeros inteiros (4 bytes em sistemas moder)
     int year = 2026;
     int quantity = 1;
@@ -144,9 +144,62 @@ int main() {
         printf("hello %s\n", name);
     }
 
+    int choice = 0;
+    float pounds = 0.0f;
+    float kilograms = 0.0f;
+
+    printf("weight Conversion calculator\n");
+    printf("1. kg to pounds\n");
+    printf("2. pounds to kg\n");
+    printf("enter your choice  (1 or 2); ");
+    scanf("%d", &choice);
+
+    if(choice == 1){
+        printf("enter the weight in kg \n");
+        scanf("%f", &kilograms);
+        pounds = kilograms * 2.20462;
+        printf("%.2f kilograms is equal to %.2f pounds\n", kilograms, pounds);
+    }
 
 
+    else if(choice == 2){
+        printf("enter the weight in pounds \n");
+        scanf("%f", &pounds);
+        kilograms = pounds * 2.20462;
+        printf("%2.f kilograms is equal to %.2f pounds \n",pounds, kilograms);
 
+
+    }else{
+        printf("invalid choice\n");
+    }
+*/
+
+    char choice = '\0';
+    float feh = 0.0f;
+    float celsius = 0.0f;
+
+    printf("Temperature Conversion Program");
+    printf("C. Celsius to feh");
+    printf("f. feh to Celsius");
+    printf("is the temp in celsius (C) or fah (F)?: ");
+
+    scanf("%c", &choice);
+
+    if(choice == 'C'){
+        printf("enter the temperature in celsius: \n");
+        scanf("%f", &celsius);
+        feh = (celsius * 9 / 5) + 32;
+        printf("%.1f, Celsius is equal to %.1f feh\n", celsius, feh);
+    }
+    else if(choice ==  'F'){
+        printf("enter the temperature in fah: \n");
+        scanf("%f", &feh);
+        celsius = (feh - 32) * 5 / 9;
+        printf("%.1f, feh is equal to %.1f celsius\n", feh, celsius);
+    }
+    else{
+        printf("invalid choice, please select c or f\n");
+    }
 
 
 

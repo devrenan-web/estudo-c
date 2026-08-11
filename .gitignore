@@ -1,0 +1,22 @@
+# Arquivos objeto (resultado intermediário da compilação)
+*.o
+*.obj
+
+# Executáveis (o "bolo pronto")
+*.out
+*.exe
+a.out
+
+# Arquivos de bibliotecas compiladas
+*.a
+*.so
+*.dll
+
+# Arquivos de debug/build gerados por IDEs
+*.gch
+build/
+bin/
+
+# Arquivos temporários do editor/SO
+*~
+.vscode/

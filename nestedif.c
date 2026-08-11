@@ -1,15 +1,19 @@
 #include <stdio.h>
-#include <stdbool.h>
 
-int main() {
-    
-    float price = 10.00;
-    bool isStudent = true;
+int main(void) {
+    int idade = 20;
+    int tem_lista_vip = 1; // 1 = sim, 0 = nao
 
-    if(isStudent){
-        printf("desconto de 10%");
-        price *= 0.9;
+    if (idade >= 18) {
+        // if externo passou -> só agora checamos o if interno
+        if (tem_lista_vip) {
+            printf("Entra na area VIP\n");
+        } else {
+            printf("Entra na pista normal\n");
+        }
+    } else {
+        printf("Nao pode entrar\n");
     }
 
-    printf("the price of a ticket is: $%.2f\n", price);
+    return 0;
 }

@@ -28,7 +28,6 @@ int main() {
 
     printf("o valor e %.10lf\n", valorAletorio);
 
-
     char grade = 'A';               // unico caracter (1 Byte)
 
     printf("your grade is %c\n", grade);
